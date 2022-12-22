@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    	http://www.springframework.org/schema/beans/spring-beans.xsd
+    	http://www.springframework.org/schema/context
+    	http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- this is our bean -->
+    
+    <bean class="com.springcore.collections.Emp"  name="emp1">
+    	<property name="name" value="john"/>
+    	
+    	<property name="phones">
+    		<list>
+    			<value>9199268844</value>
+    			<value>6207730819</value>
+    			<value>9431082641</value>
+    			<value>6200021600</value>
+    			<null/>
+    		</list>
+    	</property>
+    	
+    	<property name="addresses">
+    		<set>
+    			<value>Muzaffarpur</value>
+    			<value>patna</value>
+    			<value>kerla</value>
+    			<value>Bangluru</value>
+    			
+    		</set>
+    	</property>
+    	
+    	<property name="courses">
+    		<map>
+    			<entry key="java" value="2 months"/>
+    			<entry key="Data structure" value="3 months"/>
+    			<entry key="Machine Leatning" value="5 months"/>
+    		</map>
+    	</property>
+    	
+    	<property name="props">
+    		<props>
+    			<prop key="name">SWET</prop>
+    			<prop key="password">Sun@123</prop>
+    			<prop key="channel">harrypotter</prop>
+    		</props>
+    	</property>
+    	
+    </bean>
+    	
+</beans>
