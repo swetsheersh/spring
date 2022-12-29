@@ -18,5 +18,20 @@
     	<constructor-arg value="60309" type="int" />
     	<constructor-arg ref="certi" />
     </bean>
+     
+    <bean class="com.springcore.ci.Addition" name="addition">
+    	<constructor-arg value="15" index="1"/>
+    	<constructor-arg value="15" type="int" index="0"/>
+    </bean>
+    
+    <bean class="com.springcore.ci.Addition" name="addition1">
+    	<constructor-arg value="20.005" />
+    	<constructor-arg value="15.545" type="double" />
+    </bean>
+    
+    <bean class="com.springcore.ci.Addition" name="addition2">
+    	<constructor-arg value="35" />
+    	<constructor-arg value="15" type="String" />
+    </bean>
     
 </beans>
